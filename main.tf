@@ -61,3 +61,8 @@ module "website_s3_bucket" {
   }
 }
 
+module "s3_bucket" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-rc/aws"
+  version = "1.0.0"
+  bucket_name = "s3-bucket-rc-20260827"
+}
